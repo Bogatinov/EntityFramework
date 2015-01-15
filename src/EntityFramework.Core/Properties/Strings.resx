@@ -417,4 +417,7 @@
   <data name="InvalidEntityType" xml:space="preserve">
     <value>The entity type '{type}' provided for the argument '{argumentName}' must be a reference type.</value>
   </data>
+  <data name="ConnectionStringNotFound" xml:space="preserve">
+    <value>No connection string named '{connectionString}' could be found in configuration.</value>
+  </data>
 </root>

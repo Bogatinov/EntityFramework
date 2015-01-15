@@ -812,6 +812,14 @@ namespace Microsoft.Data.Entity.Internal
             return string.Format(CultureInfo.CurrentCulture, GetString("InvalidEntityType", "type", "argumentName"), type, argumentName);
         }
 
+        /// <summary>
+        /// No connection string named '{connectionString}' could be found in configuration.
+        /// </summary>
+        public static string ConnectionStringNotFound([CanBeNull] object connectionString)
+        {
+            return string.Format(CultureInfo.CurrentCulture, GetString("ConnectionStringNotFound", "connectionString"), connectionString);
+        }
+
         private static string GetString(string name, params string[] formatterNames)
         {
             var value = _resourceManager.GetString(name);
